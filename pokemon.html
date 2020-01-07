@@ -1,17 +1,24 @@
 <html>
   <head>
     <style>
-      .body {
+      .gallery {
         background-color: whitesmoke;
         font-family: sans-serif;
         display: flex;
         flex-wrap: wrap;
       }
+
+      .body{
+        background-color: whitesmoke;
+        font-family: sans-serif;
+        text-align: center;
+      }
       .pokemon {
-        height: 400px;
-        width: 400px;
+        height: 300px;
+        width: 240px;
         padding: 1px;
-        margin: 25px;
+        margin: 20px;
+        box-shadow: 1px 1px 1px;
         background-color: white;
       }
 
@@ -30,51 +37,55 @@
       .front,
       .back {
         position: absolute;
-        height: 400px;
-        width: 300px;
+        height: 300px;
+        width: 240px;
         backface-visibility: hidden;
       }
 
       .front > img {
-        height: 250;
-        width: 300;
+        height: 200;
+        width: 240;
+        align-items: center;
         padding-bottom: 30px;
         padding-top: 30px;
       }
 
       .back {
-        height: 400px;
-        width: 400;
+        height: 300px;
+        width: 240;
         transform: rotateY(180deg);
       }
 
       .image {
-        height: 170;
-        width: 200;
-        padding-bottom: 10px;
+        height: 110;
+        width: 120;
+        padding-bottom: 1px;
         align-items: center;
       }
 
       .name {
-        width: 300;
+        width: 240;
         text-align: center;
         font-size: 15px;
-        margin-left: 50px;
-        margin-right: 50px;
+        border-radius: 10px;
         border-bottom: solid 1px black;
       }
 
       .description {
-        height: 200;
-        width: 400;
+        height: 150;
+        width: 240;
         text-align: center;
-        font-size: 15px;
+        font-size: 10.5px;
         color: black;
       }
     </style>
     <title>pokemon</title>
   </head>
 <body class="body">
+  <h1>Pokemon Gallery</h1>
+  <div class = "gallery">
+
+  
 <div class="pokemon">
     <div class="flip_box"><div class="front">
      <h4 class="name">Bulbasaur</h4>
@@ -2189,5 +2200,6 @@ Mew is said to possess the genetic composition of all Pokémon. It is capable of
       </div>
     </div>
   </div>
+</div>
 </body>
 </html>
